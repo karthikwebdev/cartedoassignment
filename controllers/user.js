@@ -594,7 +594,7 @@ exports.makeLogin = (req, res) => {
   }).exec((err, user) => {
     if (err || !user) {
       return res.status(400).json({
-        error: "No user!, Please signup or Verify your email",
+        error: "Please signup or Verify your email",
       });
     }
     if (!user.authenticate(password)) {

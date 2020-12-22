@@ -91,6 +91,7 @@ function Signup() {
               bottom: "20px",
               left: "50%",
               transform: "translate(-50%)",
+              zIndex: 1000,
             }}
             type={error ? "error" : "success"}
             showIcon
