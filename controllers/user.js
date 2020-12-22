@@ -480,7 +480,10 @@ exports.makeSignup = (req, res) => {
         .send(mailOptions)
         .then((data) => {
           return res.json({
-            message: "Your verification mail sent to " + email,
+            message:
+              "Your verification mail sent to " +
+              email +
+              ". Kindly please check spam and Promotions folder aswell",
           });
         })
         .catch((err) => {
