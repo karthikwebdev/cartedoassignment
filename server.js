@@ -36,7 +36,7 @@ const swaggerOptions = {
       contact: {
         name: "Karthik Enumarthi",
       },
-      servers: ["http://localhost:5000"],
+      servers: ["https://cartedo-challenge.herokuapp.com"],
     },
   },
   apis: ["./routes/*.js"],

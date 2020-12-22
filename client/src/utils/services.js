@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = "http://localhost:5000";
+const API = "https://cartedo-challenge.herokuapp.com";
 const api = axios.create({
   baseURL: `${API}/api`,
   headers: {
