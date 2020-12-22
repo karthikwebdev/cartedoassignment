@@ -51,7 +51,7 @@ function Signup() {
           setTimeout(() => {
             setMessage("");
             setError(false);
-          }, 5000);
+          }, 15000);
         }
       })
       .catch((err) => {
