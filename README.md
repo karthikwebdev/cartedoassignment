@@ -24,7 +24,7 @@ npm run client
 
 ## App Info
 
-Link to project [Here](https://www.ekarthik.tech)
+Link to project [Here](https://cartedo-challenge.herokuapp.com/)
 
 ### Author
 
@@ -33,7 +33,7 @@ Karthik Enumarthi
 
 ### API Docs
 
-Entire Documentation for REST apis are [Here](https://www.ekarthik.tech)
+Entire Documentation for REST apis are [Here](https://cartedo-challenge.herokuapp.com/docs/)
 
 ### Version
 
