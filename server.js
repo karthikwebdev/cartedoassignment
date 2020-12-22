@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const cors = require("cors");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
+const path = require("path");
 
 const connectDB = require("./config/db");
 //import all routers
@@ -46,6 +47,16 @@ app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use("/api", userRouter);
 app.use("/api", blockRouter);
+
+//Serve static assets if in production
+if (process.env.NODE_ENV === "production") {
+  //set static folder
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 // 404 page
 app.use((req, res) => {
