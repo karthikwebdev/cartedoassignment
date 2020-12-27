@@ -86,7 +86,7 @@ function NavBar({ history }) {
                   Logout
                 </Menu.Item>
               ) : (
-                <Menu.Item>
+                <>
                   <Menu.Item key="2">
                     <Link to="/login" style={{ textDecoration: "none" }}>
                       {" "}
@@ -95,11 +95,10 @@ function NavBar({ history }) {
                   </Menu.Item>
                   <Menu.Item key="3">
                     <Link to="/signup" style={{ textDecoration: "none" }}>
-                      {" "}
-                      Signup{" "}
+                      Signup
                     </Link>
                   </Menu.Item>
-                </Menu.Item>
+                </>
               )}
             </>
           ) : (
