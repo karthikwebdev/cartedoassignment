@@ -1,5 +1,21 @@
 # cartedoassignment
 
+
+
+## Environmental variables setup
+
+``` bash
+#create .env file in root directory and enter these variables
+
+PORT = 5000
+REMOTE_MONGO_URL = MONGODB_CONNECTION_URL
+SENDGRID_SENDER_MAIL= SENDGRID_REGISTERED_EMAIL
+SENDGRID_API_KEY= SENDGRID_GIVEN_API_KEY_STRING
+JWT_SECRET= ANY_RANDOM_STRING
+CLIENT_URL= http://localhost:3000
+```
+
+
 ## Quick Start
 
 ``` bash
